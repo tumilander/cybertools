@@ -300,7 +300,7 @@ do
                     install_findomain
                 fi
 
-                if [ $com6 == /usr/local/go/bin/go ]; then
+                if [ $com6 == /usr/local/go/ ]; then
                     echo -e "go        ====> ""\e[1;32mok\e[0m"
                     sleep 3
                 else 
@@ -360,7 +360,7 @@ do
                     install_findomain
                 fi
 
-                if [ $com6 == /usr/local/go/bin/go ]; then
+                if [ $com6 == /usr/local/go/ ]; then
                     echo -e "go        ====> ""\e[1;32mok\e[0m"
                     sleep 3
                 else 
@@ -435,7 +435,7 @@ do
                     install_findomain
                 fi
 
-                if [ $com1 == /usr/local/go/bin/go ]; then
+                if [ $com1 == /usr/local/go/ ]; then
                     echo -e "go        ====> ""\e[1;32mok\e[0m"
                     sleep 3
                 else 
@@ -493,7 +493,7 @@ do
                     install_findomain
                 fi
 
-                if [ $com1 == /usr/local/go/bin/go ]; then
+                if [ $com1 == /usr/local/go/ ]; then
                     echo -e "go        ====> ""\e[1;32mok\e[0m"
                     sleep 3
                 else 
