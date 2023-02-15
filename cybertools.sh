@@ -290,6 +290,7 @@ do
                 com3="$(whereis findomain | cut -d " " -f 2)"
                 com4="$(whereis httpx | cut -d " " -f 2)"
                 com5="$(whereis httprobe | cut -d " " -f 2)"
+                com6="$(whereis go | cut -d " " -f 2)"
 
                 ##Condicionais da opcao Ubuntu
                 if [ $com3 == /usr/bin/findomain ]; then
@@ -298,6 +299,12 @@ do
                 else
                     install_findomain
                 fi
+
+                if [ $com6 == /usr/local/go/bin/go ]; then
+                    echo -e "go        ====> ""\e[1;32mok\e[0m"
+                    sleep 3
+                else 
+                    install_golang_ubuntu
 
                 if [ $com0 == /usr/bin/amass ] ; then
                     echo -e "amass     ====>" "\e[1;32mok\e[0m"
@@ -341,6 +348,7 @@ do
                 com3="$(whereis findomain | cut -d " " -f 2)"
                 com4="$(whereis httpx | cut -d " " -f 2)"
                 com5="$(whereis httprobe | cut -d " " -f 2)"
+                com6="$(whereis go | cut -d " " -f 2)"
 
                 ## Condicionais Opcoes Kali
                 if [ $com3 == /usr/bin/findomain ]; then
@@ -350,6 +358,12 @@ do
                 else
                     install_findomain
                 fi
+
+                if [ $com6 == /usr/local/go/bin/go ]; then
+                    echo -e "go        ====> ""\e[1;32mok\e[0m"
+                    sleep 3
+                else 
+                    install_golang_kali
                 
                 if [ $com0 == /usr/bin/amass ]; then
                     echo -e "amass     ====>" "\e[1;32mok\e[0m"
@@ -419,7 +433,7 @@ do
                     install_findomain
                 fi
 
-                if [ $com1 == /usr/local/go/bin/go -o /usr/bin/go -o /usr/lib/go -o /usr/local/go -o /usr/share/go ]; then
+                if [ $com1 == /usr/local/go/bin/go ]; then
                     echo -e "go        ====> ""\e[1;32mok\e[0m"
                     sleep 3
                 else 
@@ -477,7 +491,7 @@ do
                     install_findomain
                 fi
 
-                if [ $com1 == /usr/local/go/bin/go -o /usr/bin/go -o /usr/lib/go -o /usr/local/go -o /usr/share/go ]; then
+                if [ $com1 == /usr/local/go/bin/go ]; then
                     echo -e "go        ====> ""\e[1;32mok\e[0m"
                     sleep 3
                 else 
