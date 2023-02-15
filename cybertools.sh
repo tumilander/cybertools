@@ -305,6 +305,7 @@ do
                     sleep 3
                 else 
                     install_golang_ubuntu
+                fi
 
                 if [ $com0 == /usr/bin/amass ] ; then
                     echo -e "amass     ====>" "\e[1;32mok\e[0m"
@@ -364,6 +365,7 @@ do
                     sleep 3
                 else 
                     install_golang_kali
+                fi
                 
                 if [ $com0 == /usr/bin/amass ]; then
                     echo -e "amass     ====>" "\e[1;32mok\e[0m"
