@@ -84,7 +84,7 @@ while true; do
             ;;
 
         *)
-            echo "Opção inválida!"
+            echo "Opção invalida!"
             ;;
     esac
 done
