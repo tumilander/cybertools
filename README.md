@@ -5,5 +5,5 @@
 - ./cybertools.sh
 
 #Erros
-- Caso ocorra erros de pacotes nas instalções, verifiquei sua versão do go.
+- Caso ocorra erros de pacotes nas instalações, verifiquei sua versão do go.
 - Todos os pacotes aqui estão baseados na instalação oficial do go pelo site https://go.dev/doc/install
